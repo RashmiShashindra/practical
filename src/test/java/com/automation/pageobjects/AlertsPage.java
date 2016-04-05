@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class AlertsPage extends BasePage {
 
-    final static Logger logger = Logger.getLogger(LoginPage.class);
+    final static Logger logger = Logger.getLogger(AlertsPage.class);
 
     @FindBy(xpath = "html/body/table/tbody/tr[12]/td[1]/a/tt")
     WebElement lnkAlerts;

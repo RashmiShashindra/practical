@@ -36,8 +36,9 @@ public class BasePage {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
 //        driver.get("http://10.101.15.21:8080/ui-training-app/");
-        driver.get("http://10.101.15.21:8080/ui-training-app/");
-        Assert.assertEquals("Directory Listing For /", driver.getTitle());
+        driver.get("http://toolsqa.com/iframe-practice-page/");
+//        Assert.assertEquals("Directory Listing For /", driver.getTitle());
+        Assert.assertEquals("TOOLSQA | IFrame practice page", driver.getTitle());
         logger.info("*************** Test Started ********************");
         return driver;
     }

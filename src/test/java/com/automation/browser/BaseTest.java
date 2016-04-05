@@ -41,7 +41,7 @@ public class BaseTest {
             System.out.println(testResult.getStatus());
             File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             System.out.println("Screenshot Capturing");
-            FileUtils.copyFile(scrFile, new File("E:\\my-automation\\Automation_Screenshots\\"+testResult.getName()+".jpg"));
+            FileUtils.copyFile(scrFile, new File("E:\\TestAutomation Practice\\Automation Screenshots\\"+testResult.getName()+".jpg"));
             System.out.println("Saving Screenshot");
         }
 
