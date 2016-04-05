@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BAT">
+
+    <listeners>
+
+        <listener class-name="com.automation.utils.Listener"></listener>
+
+    </listeners>
+
+    <test name="LoginTest">
+
+        <groups>
+            <run>
+                <include name="BAT" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.automation.testcases.LoginTest" />
+        </classes>
+
+    </test>
+
+    <test name="MyCoursesTest">
+
+        <groups>
+            <run>
+                <include name="BAT" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.automation.testcases.MyCoursesTest" />
+        </classes>
+
+
+    </test>
+</suite>
